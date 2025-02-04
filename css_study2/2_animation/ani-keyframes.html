@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change_bg;
+            /* 애니메이션 이름뿐만 아니라 지속시간까지 추가해야 동작됨 */
+            animation-duration: 3s;
+        }
+        .box {
+            transition: 2s ease-in;
+        }
+        .box:hover{
+            /* x축으로 180도 회전하면서 2배 커짐 */
+            transform: scale(2) rotateX(180deg);
+            /* 원근감 추가 */
+            transform: scale(2) rotateX(180deg) perspective(720px);
+        }
+        @keyframes change_bg {
+            /* 애니메이션 시작 시점 */
+            from{
+                background-color: blue;
+            }
+            /* 애니메이션 끝 시점 */
+            to{
+                background-color: #a5d6ff;
+                border: 1px solid blue;
+                /* 원으로 변경 */
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

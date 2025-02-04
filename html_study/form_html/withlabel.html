@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>수강분야</h1>
+    <ul>
+        <!-- name="text" 서버로 전송하는것 -->
+        <input type="checkbox" name="wr">작문<br>
+
+        <!-- label로 감싸면 글자클릭시 체크가능 -->
+        <label>
+            <input type="checkbox" name="rd">독해<br>
+        </label>
+    </ul>
+
+    <ul>
+        <!-- 라디오 버튼은 name의 속성값이 같아야함 -->
+        <input type="radio" name="subject">영어회화<br>
+        <input type="radio" name="subject">일어회화<br>
+    </ul>
+</body>
+
+</html>

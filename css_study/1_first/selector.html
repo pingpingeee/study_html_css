@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 테두리 바깥쪽 여백이 20px */
+            margin: 20px;
+        }
+
+        #container {
+            width: 600px;
+            /* 테두리가 2px 두께, 점선, 검정색 */
+            border: 2px dotted black;
+            /* 테두리 안쪽 여백이 15px */
+            padding: 15px;
+        }
+
+        .bluetext {
+            color: blue;
+        }
+
+        p {
+            font-size: .9em;
+        }
+
+        .accent {
+            /* 글자가 흰색이라서 안보임 */
+            color: #fff;
+            /* 0 ~ f 에서 2는 작게 빨강, 녹샌, 파랑 채우면 검정 */
+            background-color: #222222;
+            padding: 5px;
+        }
+
+        h3,
+        h4 {
+            color: yellow;
+            background-color: #222;
+        }
+
+        .browntext {
+            color: brown;
+        }
+
+        .boldtext {
+            font-weight: bold;
+        }
+
+        #aaa {
+            color: green;
+        }
+
+        #bbb {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div : 특정영역으로 분리(구획을 나눔) -->
+    <div id="container">
+        <h1>회사소개</h1>
+        <h2 class="accent">사람을 구체적으로 도와주는 책</h2>
+        <p>
+            <!-- class는 2개를 한꺼번에 적용됨 -->
+            이지스퍼블리싱의 책에는 <span class="browntext boldtext"> 사람들에게 구체적으로 도움이 되는
+                책을 만든다는 출판 가치가 담겨 있습니다.</span>
+        </p>
+        <!-- id : aaa나 bbb처럼 단일선언은 되지만 동시선언은 안된다 -->
+        <p id="aaa">
+            이지스퍼블리싱의 책에는 사람들에게 구체적으로 도움이 되는
+            책을 만든다는 출판 가치가 담겨 있습니다.
+        </p>
+        <h2 class="bluetext">이지스퍼블리싱의 미션</h2>
+        <p class="bluetext">
+            이지스퍼블리싱의 책에는 사람들에게 구체적으로 도움이 되는
+            책을 만든다는 출판 가치가 담겨 있습니다.
+        </p>
+        <p>
+            이지스퍼블리싱의 책에는 사람들에게 구체적으로 <span class="bluetext"> 도움</span>이 되는
+            책을 만든다는 출판 가치가 담겨 있습니다.
+        </p>
+        <h3>정보의 지름길을 만든다.</h3>
+        <h4>도움이 되는 책을 만든다.</h4>
+    </div>
+
+</body>
+
+</html>

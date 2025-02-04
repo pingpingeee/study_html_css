@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            margin: 60px;
+            /* animation: background 1.5s infinite alternate; */
+            animation: background 1.5s infinite alternate, rotate 1.5s infinite;
+            /* animation: rotate 1.5s infinite; 오류발생 */
+            
+        }
+        
+        @keyframes background {
+            from {
+                background: red;
+            }
+            50%{
+                background: green;
+            }
+            to {
+                background: blue;
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform: rotateX(-180deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+</body>
+
+</html>

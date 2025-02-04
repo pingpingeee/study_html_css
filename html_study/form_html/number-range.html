@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>등록정보</legend>
+            참여인원<small>(최대 10명)</small>
+            <input type="number"><br>
+            
+            지원물품<small>(1인당 5개)</small>
+            <!-- value : 시작값 / min : 최소값 / step : 단위 / max : 최대 밸류-->
+            <input type="number" value="5" min="0" step="5" max="50"><br>
+
+            희망단계<small>(하, 중, 상)</small>
+            <input type="range" max="3" value="1" min="1"><br>
+            
+            <input type="color" value="#01d03d">
+             
+            
+        </fieldset>
+    </form>
+</body>
+</html>

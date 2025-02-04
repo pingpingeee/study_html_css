@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+        }
+
+
+        .container {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        footer{
+            background-color: pink;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>요리정보</h1>
+    <div class="container">
+        <form>
+            <h2>로그인</h2>
+            아이디
+            <input type="text" placeholder="아이디를 입력하세요.">
+            비밀번호
+            <input type="password" placeholder="비밀번호를 입력하세요.">
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>회원정보</h2>
+        이름
+        <input type="text" placeholder="이름을 입력하세요.">
+        이메일
+        <input type="text" placeholder="이메일를 입력하세요.">
+        전화번호
+        <input type="text" placeholder="전화번호를 입력하세요.">
+        <button type="submit">정보수정</button>
+    </div>
+
+    <div class="container">
+        <h2>요리 등록 및 수정</h2>
+        요리이름
+        <input type="text" placeholder="요리이름을 입력하세요.">
+        재료
+        <textarea placeholder="재료를 입력하세요." rows="5"></textarea>
+        조리방법
+        <textarea placeholder="조리방법을 입력하세요." rows="5"></textarea>
+        <button type="submit">요리 등록</button>
+    </div>
+    <footer>
+        &copy2025 요리 어쩌구
+    </footer>
+</body>
+
+</html>

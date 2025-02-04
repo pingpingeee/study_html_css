@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid green;
+            width: 100px;
+            text-align: center;
+        }
+
+        .box:hover {
+            /* transform의 rotate 속성값을 15도 기운다 */
+            transform: rotate(15deg);
+
+            /* moz 접두사는 모질라, 파이어폭스 전용 */
+            /* -moz-transform: rotate(15deg); */
+
+            /* o 접두사는 오페라 전용 */
+            /* -o-animation: rotate(15deg); */
+
+            /* ms 접두사는 익스플로러 전용 */
+            /* -ms-transform: rotate(15deg); */
+
+            /* webkit 접두사는 사파리, 크롬 전용 */
+            /* -webkit-animation: rotate(15deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Mouser Over</div>
+</body>
+
+</html>
